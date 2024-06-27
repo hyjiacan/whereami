@@ -24,11 +24,11 @@ function start() {
     const timestamp = position.timestamp
 
     els.timestamp.textContent = timestamp === null ? '<未知>' : new Date(timestamp).toLocaleString()
-    els.latitude.textContent = latitude === null ? '<未知>' : latitude.toFixed(8)
-    els.longitude.textContent = longitude === null ? '<未知>' : longitude.toFixed(8)
-    els.altitude.textContent = altitude === null ? '<未知>' : altitude.toFixed(8)
-    els.accuracy.textContent = accuracy === null ? '<未知>' : accuracy.toFixed(8)
-    els.altitudeAccuracy.textContent = altitudeAccuracy === null ? '<未知>' : altitudeAccuracy.toFixed(8)
+    els.latitude.textContent = latitude === null ? '<未知>' : latitude.toFixed(4)
+    els.longitude.textContent = longitude === null ? '<未知>' : longitude.toFixed(4)
+    els.altitude.textContent = altitude === null ? '<未知>' : altitude.toFixed(2)
+    els.accuracy.textContent = accuracy === null ? '<未知>' : accuracy
+    els.altitudeAccuracy.textContent = altitudeAccuracy === null ? '<未知>' : altitudeAccuracy
   }
 
   function error(e) {
