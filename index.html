@@ -3,41 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Where Am I</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+	<style>
+		html, body {
+			margin: 0;
+		}
+		#container {
+			max-width: 600px;
+			background: #eee;
+			margin: 0 auto;
+			padding: 10px;
+			height: 100vh;
+			box-sizing: border-box;
+		}
+		
+		li {
+			margin: 20px 0;
+		}
+		
+		.label {
+			
+		}
+	</style>
 </head>
 <body>
+<div id="container">
 <h2>Where Am I</h2>
 <ul>
     <li>
-        <span>更新时间:</span>
+        <span class="label">更新时间:</span>
         <span id="timestamp"></span>
     </li>
     <li>
-        <span>纬度:</span>
+        <span class="label">纬度:</span>
         <span id="latitude"></span>
         <span>度</span>
     </li>
     <li>
-        <span>经度:</span>
+        <span class="label">经度:</span>
         <span id="longitude"></span>
         <span>度</span>
     </li>
     <li>
-        <span>经纬度精度:</span>
+        <span class="label">经纬度精度:</span>
         <span id="accuracy"></span>
         <span>米</span>
     </li>
     <li>
-        <span>海拔:</span>
+        <span class="label">海拔:</span>
         <span id="altitude"></span>
         <span>米</span>
     </li>
     <li>
-        <span>海拔精度:</span>
+        <span class="label">海拔精度:</span>
         <span id="altitudeAccuracy"></span>
         <span>米</span>
     </li>
 </ul>
 <div id="err"></div>
+</div>
 <script src="index.js"></script>
 </body>
 </html>
